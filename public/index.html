@@ -1,0 +1,29 @@
+<html>
+<title>Very Secure Login</title>
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <link href="styles/styles.css" rel="stylesheet"></link>
+    <script defer src="signIn.js"></script>
+</head>
+
+<body>
+    <form id="signInForm" action="/login" method="POST">
+        <div class="d-flex flex-column justify-content-center align-items-center w-100 h-100">
+            <div class="form-group" style="width: 360px;">
+                <input name="uname" id="uname" type="text" class="form-control form-control-lg m-2" placeholder="Username"></input>
+            </div>
+            <div class="form-group" style="width: 360px;">
+                <input name="pword" id="pword" type="password" class="form-control form-control-lg mt-2 mx-2" placeholder="Password"></input>
+                <div style="width: 380px;" class="d-flex flex-row justify-content-center">
+                    <small class="form-text text-muted">Don't have an account? <a href="signUp.html">Sign up</a></small>
+                </div>
+            </div>
+            <div class="form-group">
+                <input id="signInButton" class="btn btn-primary btn-lg m-3" value="Sign In" type="submit"></input>
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>
